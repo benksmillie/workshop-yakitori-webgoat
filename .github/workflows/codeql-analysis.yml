@@ -74,4 +74,4 @@ jobs:
       uses: peter-murray/github-security-report-action@v2
       with:
         token: ${{ secrets.CODEQL_REPORT_TOKEN }}
-        outputDir: ./docs
+        # outputDir: ./docs
