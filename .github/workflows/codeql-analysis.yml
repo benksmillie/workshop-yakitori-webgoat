@@ -75,3 +75,8 @@ jobs:
       with:
         token: ${{ secrets.CODEQL_REPORT_TOKEN }}
         # outputDir: ./docs
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: security-report
+        path: /home/runner/work/workshop-yakitori-webgoat/workshop-yakitori-webgoat/summary.pdf
